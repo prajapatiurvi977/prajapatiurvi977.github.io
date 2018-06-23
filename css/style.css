@@ -1,6 +1,29 @@
 .pizzalist{}
-.pizza{}
-.orderlist{}
+.pizza{
+    border-radius: 4px;
+}
+.orderlist{
+	border-radius: 4px;
+}
 .centeralign{
-	text-align:center;
+	text-align: center;
+}
+.container{
+	box-sizing: border-box;
+	width:100%;
+}
+.header{
+	color:#428bca;
+    text-align: center;
+    position: relative;
+}
+.div1{
+	display:inline-block;
+	text-align:right;
+}
+.div2{
+	display:inline-block;
+	text-align:left;
+	position:absolute;
+	vertical-align:top;
 }

@@ -4,6 +4,7 @@
     <title>Pizza Order</title>
 	<script src="js/jquery.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	
     <link href="css/style.css" rel="stylesheet">
 	<script src="js/bootstrap.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -11,22 +12,45 @@
   </head>
   <body>
 	<div class="container">
+<header class="header"><h1>PIZZA ORDER SYSTEM!</h1></header>
   <div class="row">
     <div class="col-lg-10 pizzalist">
 		<div class="row">
 			<div  class="col-lg-4 pizza">
 				<center>
-					<strong>Margherita</strong>
+					<h4><strong>CHEESE N CORN</strong></h4>
 					<img src="img/Corn_cheese.png" alt="Margherita">
-					<p>Margherita, Cheese</p>
-					<h3>$3.05</h3>
-					<button>Order</button>
+					<p>
+						<span>Cheese</span>
+						<span>Corn</span>
+					</p>
+					<h5>₹112.50</h5>
+					<button type="button" class="btn btn-primary">ADD</button>
 				</center>
 			</div>
 		</div>
 	</div>
-    <div class="col-lg-2 orderlist">Div2</div>
+    <div class="col-lg-2 orderlist">
+		<center>
+		<h4><b>ORDER SUMMARY</b></h4>
+		<div class="div1">
+			<p><span>ITEM : </span></p>
+			<p><span>GST : <span></p>
+			<p><span>TOTAL : <span></p>
+		</div>
+		<div class="div2">
+			<p><span>&nbsp;CHEESE N CORN</span></p>
+			<p><span>&nbsp;₹30.00</span></p>
+			<p><span>&nbsp;₹142.50</span></p>
+		</div>
+		<button type="button" class="btn btn-primary">Place Order</button>
+		</center>
+		<div class="alert alert-success alert-dismissible">
+		  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		  <strong>Success!</strong> Indicates a successful or positive action.
+		</div>
+	</div>
   </div>
 </div>
-  </body>
+</body>
 </html>
