@@ -1,0 +1,71 @@
+[
+    {
+        "pizza_id":1,
+        "name":"CHEESE N CORN",
+        "price":112.50,
+        "type":"veg",
+        "image":"Corn_cheese.png",
+        "ingredients":[
+            {"name":"cheese"},
+            {"name":"corn"}
+        ]
+    },
+    {
+        "pizza_id":2,
+        "name":"DELUXE VEGGIE",
+        "price":250.00,
+        "type":"veg",
+        "image":"deluxeveg.png",
+        "ingredients":[
+            {"name":"onion"},
+            {"name":"capsicum"},
+            {"name":"grilled mushroom"},
+            {"name":"paneer"},
+            {"name":"corn"}
+        ]
+    },
+    {
+        "pizza_id":3,
+        "name":"5 PEPPER",
+        "price":235.00,
+        "type":"veg",
+        "image":"five-peppers.png",
+        "ingredients":[
+            {"name":"red bell peppers"},
+            {"name":"capsicum"},
+            {"name":"jalapeno"},
+            {"name":"red paprika"}
+        ]
+    },
+    {
+        "pizza_id":4,
+        "name":"VEG EXTRAVAGANZA",
+        "price":235.00,
+        "type":"veg",
+        "image":"vegextra.png",
+        "ingredients":[
+            {"name":"Black olives"},
+            {"name":"capsicum"},
+            {"name":"onion"},
+            {"name":"grilled mushroom"},
+            {"name":"corn"},
+            {"name":"tomato"},
+            {"name":"jalapeno"},
+            {"name":"extra cheese"}
+        ]
+    },
+    {
+        "pizza_id":5,
+        "name":"FARMHOUSE",
+        "price":205.00,
+        "type":"veg",
+        "image":"farmhouse.png",
+        "ingredients":[
+            {"name":"capsicum"},
+            {"name":"onion"},
+            {"name":"grilled mushroom"},
+            {"name":"corn"},
+            {"name":"tomato"}
+        ]
+    }
+]
