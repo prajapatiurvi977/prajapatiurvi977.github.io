@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
-    <title>Pizza Order</title>
+		<title>Pizza Order</title>
+		
 	<script src="js/jquery.min.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	
@@ -11,45 +12,99 @@
 	<script src="js/script.js"></script>
   </head>
   <body>
-	<div class="container">
-<header class="header"><h1>PIZZA ORDER SYSTEM!</h1></header>
+			<div id="overlay" onclick="off()">
+					<!--<div id="text">Overlay Text</div>-->
+				</div>
+
+	
+	<div class="container body">
+
+
+
+<div class="alert">
+		<span class="closebtn" onclick="closeAlert()">&times;</span> 
+		<strong>Order Placed Successfully!</strong> Your order will be delivered in 30 minutes.
+	</div>
+
+
   <div class="row">
-    <div class="col-lg-10 pizzalist">
-		<div class="row">
-			<div  class="col-lg-4 pizza">
-				<center>
-					<h4><strong>CHEESE N CORN</strong></h4>
-					<img src="img/Corn_cheese.png" alt="Margherita">
-					<p>
-						<span>Cheese</span>
-						<span>Corn</span>
-					</p>
-					<h5>₹112.50</h5>
-					<button type="button" class="btn btn-primary">ADD</button>
-				</center>
+			<header class="header"><h1>PIZZA ORDER SYSTEM!</h1></header>
+
+		<!-- Modal -->
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+		
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Order summary</h4>
+					</div>
+					<div class="modal-body">
+						<table class="table">
+								<thead>
+									<tr>
+										<th>Item</th>
+										<th>Qty</th>
+										<th>Price</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody class="orderList">
+									
+							</tbody>
+							</table>
+					</div>
+					<div class="modal-footer">
+							<button type="button" class="btn btn-success confirmBtn" onclick='confirmOrder()' data-dismiss="modal">Confirm order</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+		
 			</div>
 		</div>
-	</div>
-    <div class="col-lg-2 orderlist">
-		<center>
-		<h4><b>ORDER SUMMARY</b></h4>
-		<div class="div1">
-			<p><span>ITEM : </span></p>
-			<p><span>GST : <span></p>
-			<p><span>TOTAL : <span></p>
-		</div>
-		<div class="div2">
-			<p><span>&nbsp;CHEESE N CORN</span></p>
-			<p><span>&nbsp;₹30.00</span></p>
-			<p><span>&nbsp;₹142.50</span></p>
-		</div>
-		<button type="button" class="btn btn-primary">Place Order</button>
-		</center>
-		<div class="alert alert-success alert-dismissible">
-		  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-		  <strong>Success!</strong> Indicates a successful or positive action.
+		<!-- Model End-->
+
+
+    <div class="col-lg-9 pizzaslist">
+		<div class="row pizzalist">
+			
 		</div>
 	</div>
+    <div class="col-lg-3 orderlistdiv">
+			<center>
+				<h4><b>ORDER SUMMARY</b></h4>
+				<!-- <div class="div1">
+					<p><span>ITEM : </span></p>
+					<p><span>GST : <span></p>
+					<p><span>TOTAL : <span></p>
+				</div>
+				<div class="div2">
+					<p><span>&nbsp;CHEESE N CORN</span></p>
+					<p><span>&nbsp;₹30.00</span></p>
+					<p><span>&nbsp;₹142.50</span></p>
+				</div> -->
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Qty</th>
+							<th>Price</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody class="orderList">
+						<tr>
+							<td>Total</td>
+							<td></td>
+							<td>0</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<button type="button" id="place-order-btn" class="btn btn-warning"  data-toggle="modal" data-target="#myModal">Place Order</button>
+			</center>
+		</div>
   </div>
 </div>
 </body>
