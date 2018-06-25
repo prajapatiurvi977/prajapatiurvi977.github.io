@@ -198,6 +198,3 @@ function closeAlert(){
 	totalPizzaPrice();
 	
 }
-function off() {
-   // document.getElementById("overlay").style.display = "none";
-}
