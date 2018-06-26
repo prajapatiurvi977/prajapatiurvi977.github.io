@@ -84,11 +84,7 @@ h1{
 	vertical-align:top;
 }
 
-.orderlistdiv {
-	top: 70;
-	margin : 10px;
-    right: 0
-}
+
 .ingredients{
 	display:none;
 	padding-left : 30px;
